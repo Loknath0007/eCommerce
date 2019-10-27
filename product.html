@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <title>Products Details</title>
+  </head>
+  <body>
+    <div class="top-nav-bar">
+      <div class="search-box">
+        <i class="fas fa-bars" id="menu-btn" onclick="openmenu()"></i>
+        <i class="fas fa-times" id="close-btn" onclick="closenmenu()"></i>
+        <a href="./index.html"><img src="./image/logo.png" alt="logo" /></a>
+        <input type="text" name="search" id="search" class="form-control" />
+        <span class="input-group-text"><i class="fas fa-search"></i></span>
+      </div>
+      <div class="menu-bar">
+        <ul>
+          <li>
+            <a href=""><i class="fas fa-shopping-cart"></i>Cart</a>
+          </li>
+        </ul>
+        <ul>
+          <li><a href="">Sign Up</a></li>
+        </ul>
+        <ul>
+          <li><a href="">Log In</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="header">
+            <div class="side-menu" id="side-menu">
+              <ul>
+                <li>
+                  On Sale<i class="fas fa-angle-right"></i>
+                  <ul>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                  </ul>
+                </li>
+                <li>
+                  Mobile<i class="fas fa-angle-right"></i>
+                  <ul>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                  </ul>
+                </li>
+                <li>
+                  Computer<i class="fas fa-angle-right"></i>
+                  <ul>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                  </ul>
+                </li>
+                <li>
+                  Women’s Fashion <i class="fas fa-angle-right"></i>
+                  <ul>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                  </ul>
+                </li>
+                <li>
+                  Men’s Fashion<i class="fas fa-angle-right"></i>
+                  <ul>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                  </ul>
+                </li>
+                <li>
+                  Phone & Teleco<i class="fas fa-angle-right"></i>
+                  <ul>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                  </ul>
+                </li>
+                <li>
+                  Computer, Office <i class="fas fa-angle-right"></i>
+                  <ul>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                  </ul>
+                </li>
+                <li>
+                  Consumer Electronics <i class="fas fa-angle-right"></i>
+                  <ul>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                  </ul>
+                </li>
+                <li>
+                  Jewellery & Watches <i class="fas fa-angle-right"></i>
+                  <ul>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                  </ul>
+                </li>
+                <li>
+                  Home Appliance <i class="fas fa-angle-right"></i>
+                  <ul>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                  </ul>
+                </li>
+                <li>
+                  Bags & Shoes <i class="fas fa-angle-right"></i>
+                  <ul>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                  </ul>
+                </li>
+                <li>
+                  Toys, Kids & Baby<i class="fas fa-angle-right"></i>
+                  <ul>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                  </ul>
+                </li>
+                <li>
+                  Outdoor Fun & Sports <i class="fas fa-angle-right"></i>
+                  <ul>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                  </ul>
+                </li>
+                <li>
+                  Beauty & Hair<i class="fas fa-angle-right"></i>
+                  <ul>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                  </ul>
+                </li>
+                <li>
+                  Automobiles <i class="fas fa-angle-right"></i>
+                  <ul>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+    </section>
+
+    <section class="productinfo">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div id="demo" class="carousel slide" data-ride="">
+              <!-- Indicators -->
+              <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+              </ul>
+
+              <!-- The slideshow -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./image/products/feature products/sneakers1.jpeg"
+                    alt="Los Angeles"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./image/products/feature products/sneakers2.jpeg"
+                    alt="Chicago"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./image/products/feature products/headphone.jpeg"
+                    alt="New York"
+                  />
+                </div>
+              </div>
+
+              <!-- Left and right controls -->
+              <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 ">
+            <p class="new">NEW</p>
+            <h2>Hot Selling Porducts</h2>
+            <p class="productcode">Product Code: IRD001</p>
+            <div class="rating-icon">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <h5>USD $150.00</h5>
+              <P><span>Availability</span>: In Stock</P>
+              <P><span>Condition</span>: New</P>
+              <P><span>Brand</span>: XYZ Company</P>
+              <p>
+                Quantity:
+                <span><input type="number" min="1" max="10" value="1"</span>
+                <button class="btn btn-secondary">Add to Cart</button>
+              </p>
+              <img
+                class="product-securelogo"
+                src="./image/products/secure image/securepaymentproducts.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-details">
+      <div class="container">
+        <div class="row main">
+          <div class="col-md-12 col-sm-12 ">
+            <div class="card-header">
+              <div class="alink">
+                <a
+                  class="card-link"
+                  href="#productdetails"
+                  data-toggle="collapse"
+                  >Product Desciption <span><i class="fas fa-plus"></i></span
+                ></a>
+              </div>
+              <div class="collapse show" id="productdetails">
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters, as opposed to using 'Content
+                  here, content here', making it look like readable English.
+                  Many desktop publishing packages and web page editors now use
+                  Lorem Ipsum as their default model text, and
+                </p>
+              </div>
+            </div>
+            <div class="product-size">
+              <div class="card-header">
+                <a
+                  href="#seconddetails"
+                  class="card-link"
+                  data-toggle="collapse"
+                  >Product Specification<span><i class="fas fa-plus"></i></span
+                ></a>
+              </div>
+              <div class="collapse" id="seconddetails">
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters, as opposed to using 'Content
+                  here, content here', making it look like readable English.
+                  Many desktop publishing packages and web page editors now use
+                  Lorem Ipsum as their default model text, and
+                </p>
+              </div>
+            </div>
+            <div class="product-review">
+              <div class="card-header">
+                <a href="#thirddetails" class="card-link" data-toggle="collapse"
+                  >Product Reviews<span><i class="fas fa-plus"></i></span
+                ></a>
+              </div>
+              <div class="collapse" id="thirddetails">
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters, as opposed to using 'Content
+                  here, content here', making it look like readable English.
+                  Many desktop publishing packages and web page editors now use
+                  Lorem Ipsum as their default model text, and
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------------Simillar Products-------------------------------------->
+
+    
+            <section class="new-products">
+                    <div class="container">
+                            <div class="title-box">
+                                <h2>Smillar </h2>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="product-top">
+                                        <img class="onsale-image" src="./image/products/feature products/iphonex.jpg" alt="product-top">
+                                        <div class="overlay-right">
+                                            <button type="button" class="btn btn-secondary" title="Add- to Wishlist">
+                                                    <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-secondary" title="Add- to Wishlist">
+                                                    <i class="far fa-heart"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-secondary" title="Add- to Cart">
+                                                    <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-buttom text-center">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <h3>iPhone X</h3>
+                                            <h5>$1250.00</h5>
+                                    </div>
+                                </div>
+                    
+                                <div class="col-md-3">
+                                        <div class="product-top">
+                                            <img class="onsale-image" src="./image/products/feature products/applewatch.png" alt="product-top">
+                                            <div class="overlay-right">
+                                                <button type="button" class="btn btn-secondary" title="Add- to Wishlist">
+                                                        <i class="fas fa-eye"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-secondary" title="Add- to Wishlist">
+                                                        <i class="far fa-heart"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-secondary" title="Add- to Cart">
+                                                        <i class="fas fa-cart-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="product-buttom text-center">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <h3>Apple Watch</h3>
+                                                <h5>$750.00</h5>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="col-md-3">
+                                            <div class="product-top">
+                                                <img class="onsale-image" src="./image/products/feature products/mackbookpro.jpg" alt="product-top">
+                                                <div class="overlay-right">
+                                                    <button type="button" class="btn btn-secondary" title="Add- to Wishlist">
+                                                            <i class="fas fa-eye"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-secondary" title="Add- to Wishlist">
+                                                            <i class="far fa-heart"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-secondary" title="Add- to Cart">
+                                                            <i class="fas fa-cart-plus"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="product-buttom text-center">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <h3>MacBook Air</h3>
+                                                    <h5>$1250.00</h5>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="col-md-3">
+                                                <div class="product-top">
+                                                    <img class="onsale-image" src="./image/products/feature products/ipod.jpg" alt="product-top">
+                                                    <div class="overlay-right">
+                                                        <button type="button" class="btn btn-secondary" title="Add- to Wishlist">
+                                                                <i class="fas fa-eye"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-secondary" title="Add- to Wishlist">
+                                                                <i class="far fa-heart"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-secondary" title="Add- to Cart">
+                                                                <i class="fas fa-cart-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-buttom text-center">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star-half-alt"></i>
+                                                        <h3>iPod </h3>
+                                                        <h5>$650.00</h5>
+                                                </div>
+                                            </div>
+                                
+                            </div>
+                        </div>     
+            </section>
+
+            <!---------------------------------Simillar Products-------------------------------------->
+
+
+            
+<section class="footer-products">
+        <div class="container">
+                <div class="row">
+                        <div class="col-md-3 col-sm-12">
+                                <img class="flogo" src="./image/logo.png" alt="logo">
+                        </div>
+                        <div class="col-md-3 col-sm-12 ">
+                                <h4>Quick Link</h4>
+                                <div class="footer-link"><a href="">Home</a></div>
+                                <div class="footer-link"><a href="">Categories</a></div>
+                                <div class="footer-link"><a href="">On Sale</a></div>
+                                <div class="footer-link"><a href="">New Arrivals</a></div>
+                                <div class="footer-link"><a href="">Featured Products</a></div>
+                                <div class="footer-link"><a href="">Coupons Code</a></div>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                                <h4>Quick Link</h4>
+                                <div class="footer-link"><a href="">Live Chat</a></div>
+                                <div class="footer-link"><a href="">About Us</a></div>
+                                <div class="footer-link"><a href="">Contact Us</a></div>
+                                <div class="footer-link"><a href="">Affiliate</a></div>
+                                <div class="footer-link"><a href="">Become Seller</a></div>
+                                <div class="footer-link"><a href="">Seller Guideline</a></div>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                                <h4>Download Apps</h4>
+                                <img class="appsicon" src="./image/appsicons.png" alt="">
+                        </div>
+                </div>
+                <div class="row">
+                        <div class="col-md-12 col-sm-12 text-center">
+                        <div class="social-icon">
+                                <h6>Social Media</h6>
+                                <a href=""><i class="fab fa-facebook-square"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                                <a href=""><i class="fab fa-youtube-square"></i></a>
+                                <a href=""><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        </div>
+                </div>
+                <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                                <img class="securelogo"src="./image/products/secure image/safechekout.png" alt="">
+                        </div>
+                </div>
+
+                <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                                <div class="developer text-center">
+                                        <h6>Developed by <span><i class="far fa-heart"></i></span> Loknath Chandra Das</h6>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        
+</section>
+
+
+<!----------------------------------------------------main menu js for mobile version--- ----------------------->
+
+<script>
+        
+        function openmenu() {
+            document.getElementById("side-menu").style.display="block";
+            document.getElementById("menu-btn").style.display="none";
+            document.getElementById("close-btn").style.display="block";
+        }
+
+        function closenmenu() {
+            document.getElementById("side-menu").style.display="none";
+            document.getElementById("menu-btn").style.display="block";
+            document.getElementById("close-btn").style.display="none";
+        }
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,562 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+$bcolor: #38b6ff;
+
+body {
+  background-color: #f1f3f4;
+  font-family: serif;
+}
+
+.top-nav-bar {
+  height: 57px;
+  top: 0;
+  position: sticky;
+  background-color: #000;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #000;
+
+  img {
+    height: 40px;
+    margin: 5px 5px;
+  }
+
+  .form-control {
+    margin-top: 9px;
+    margin-left: 38px;
+    border: 1px solid $bcolor;
+    border-radius: 28px 0px 0px 28px !important;
+    box-shadow: none !important;
+  }
+  .input-group-text {
+    background: $bcolor;
+    border: 1px solid $bcolor;
+    margin: 8.5px 10px 3px 0;
+    border-radius: 0px 28px 28px 0px !important;
+    cursor: pointer;
+  }
+  .search-box {
+    display: inline-flex;
+    width: 60%;
+
+    .fa-search {
+      color: #f1f3f4;
+    }
+  }
+}
+
+.menu-bar {
+  width: 40%;
+  height: 50px;
+  float: right;
+
+  ul {
+    display: inline-flex;
+    float: right;
+    padding-left: -40px;
+  }
+
+  ul li {
+    border-right: 1px solid $bcolor;
+    list-style-type: none;
+    padding: 15px 35px;
+    text-align: center;
+
+    cursor: pointer;
+  }
+  ul li a {
+    text-decoration: none;
+    color: $bcolor;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .fa-shopping-cart {
+    margin-right: 5px;
+    color: yellow;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .top-nav-bar {
+    height: 118px;
+    .search-box {
+      width: 100%;
+    }
+
+    .menu-bar {
+      width: 100%;
+      height: 40px;
+      .menu-bar ul {
+        margin: 10px 0;
+        width: 100%;
+      }
+      .menu-bar ul li {
+        height: 57px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* --------------------------Side Menu-------------------------------*/
+
+.side-menu {
+  height: 500px;
+  width: 15%;
+  font-size: 14px;
+  float: left;
+  z-index: 2;
+  background-color: #ddd;
+
+  ul {
+    margin-left: 10px;
+  }
+  ul li {
+    list-style-type: none;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  ul li:hover {
+    color: $bcolor;
+  }
+
+  ul li ul {
+    display: none;
+    z-index: 10;
+    top: 77px;
+  }
+
+  ul li:hover ul {
+    display: block;
+    height: 400px;
+    margin-left: 14%;
+    padding: 0 100px 10px 10px;
+    position: fixed;
+    background: #ececec;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.5);
+  }
+
+  .fa-angle-right {
+    margin-top: 4%;
+    margin-right: 8px;
+    float: right;
+  }
+}
+
+#menu-btn,
+#close-btn {
+  font-size: 30px;
+  margin: 10px;
+  color: $bcolor;
+  display: none;
+}
+
+@media only screen and (max-width: 980px) {
+  .side-menu {
+    width: 34%;
+    z-index: 20;
+    top: 133px;
+    position: fixed;
+    font-size: 10px;
+    display: none;
+
+    ul li ul {
+      top: 134px;
+    }
+    ul li:hover ul {
+      margin-left: 32%;
+    }
+  }
+
+  #menu-btn {
+    display: block;
+  }
+}
+
+/*---------------------slider---------------------------------*/
+
+.slider {
+  width: 85%;
+  margin-left: 15%;
+  padding: 0 10px;
+
+  .carousel {
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.5);
+  }
+
+  .carousel-indicators {
+    z-index: 1 !important;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .slider {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/*----------------------------------Featured-Categories------------------------*/
+
+.featured-categories {
+  width: 100%;
+  height: 60%;
+
+  margin-top: 40px;
+  padding-top: 20px;
+
+  img {
+    width: 100%;
+    height: 58%;
+    transition: 0.1s ease-out;
+    cursor: pointer;
+  }
+
+  img:hover {
+    transform: scale(1.3);
+  }
+}
+
+/*---------------------------------On Sale Products-------------------------*/
+
+.on-sale,
+.new-products {
+  width: 100%;
+  margin-top: -40px;
+  .title-box {
+    background: $bcolor;
+    color: #fff;
+    width: 180px;
+    padding: 4px 10px;
+    height: 40px;
+    display: flex;
+    h2 {
+      font-size: 24px;
+    }
+  }
+
+  .title-box::after {
+    content: "";
+    border-top: 40px solid $bcolor;
+    border-right: 50px solid transparent;
+    position: absolute;
+    display: flex;
+    margin-top: -4px;
+    margin-left: 170px;
+  }
+}
+
+.on-sale,
+.new-products {
+  .product-top {
+    width: 100%;
+    height: 90%;
+
+    .onsale-image {
+      margin-top: 30px;
+      padding-top: 30px;
+      padding-left: 25px;
+      margin-bottom: -60px;
+      width: 90%;
+      height: 70%;
+    }
+    .overlay-right {
+      display: block;
+      opacity: 0;
+      position: absolute;
+      top: 10%;
+      margin-top: 50px;
+      margin-left: 0;
+      width: 70px;
+      .fas,
+      .far {
+        cursor: pointer;
+        background-color: $bcolor;
+        color: #fff;
+        height: 35px;
+        width: 35px;
+        font-size: 20px;
+        padding: 7px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+      }
+
+      .btn-secondary {
+        background: none !important;
+        border: none !important;
+        box-shadow: none !important;
+      }
+
+      .fas:hover,
+      .far:hover {
+        transform: scale(1.5);
+      }
+    }
+  }
+
+  .product-top:hover .overlay-right {
+    opacity: 1;
+    margin-left: 8%;
+    transition: 0.5s ease-in-out;
+  }
+}
+
+/*---------------------------------Products Buttom CSS-------------------------*/
+
+.on-sale,
+.new-products {
+  .product-buttom .fas,
+  .far {
+    margin-top: -20px;
+    padding-top: -40px;
+    color: $bcolor;
+    font-size: 15px;
+  }
+
+  .product-buttom h3 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .product-buttom h5 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+.new-products {
+  margin-top: 70px;
+}
+
+/*---------------------------------Feature Services----------------------------------*/
+
+.website-features {
+  background-color: #414543;
+  margin-top: 90px;
+  margin-bottom: 50px;
+  position: relative;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.5);
+  img {
+    width: 70%;
+    height: 60%;
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h5 {
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+  }
+}
+
+/*-----------------------------Footer Menu ----------------------------------*/
+
+.footer,
+.footer-products {
+  background-color: #000;
+  padding-top: 30px;
+  margin-top: -20px;
+  h4 {
+    text-align: center;
+    color: #fff;
+  }
+  .flogo {
+    width: 100%;
+    height: 230px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .footer-link {
+    a {
+      margin-left: 80px;
+      text-decoration: none;
+      color: $bcolor;
+    }
+  }
+
+  .appsicon {
+    widows: 100%;
+    height: 160px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .securelogo {
+    width: 25%;
+    height: 80%;
+    margin-top: 35px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+  }
+
+  .social-icon {
+    h6 {
+      color: #fff;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .fab {
+      text-align: center;
+      font-size: 30px;
+      padding-right: 10px;
+      transition: 0.1s ease-out;
+      color: $bcolor;
+    }
+    .fab:hover {
+      transform: scale(1.6);
+    }
+  }
+
+  .developer {
+    h6 {
+      margin-top: 30px;
+      color: #fff;
+    }
+    .far {
+      color: red;
+    }
+  }
+}
+
+/*--------------------------------Products footer-------------------------------*/
+
+.footer-products {
+  margin-top: 80px;
+}
+
+@media only screen and (max-width: 980px) {
+  .footer,
+  .footer-products {
+    .flogo {
+      width: 100%;
+      height: 280px;
+    }
+
+    .footer-link {
+      a {
+        color: $bcolor;
+
+        text-transform: uppercase;
+        margin-left: 120px;
+        margin-bottom: 0px;
+      }
+    }
+
+    .securelogo {
+      margin-top: 50px;
+    }
+
+    .social-icon {
+      h6 {
+        margin-top: 20px;
+      }
+    }
+
+    .securelogo {
+      width: 100%;
+      height: 85%;
+      margin-top: 35px;
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+    }
+  }
+}
+/*--------------------------------Products Information-------------------------------*/
+
+.productinfo {
+  margin-top: 70px;
+  .carousel {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: $bcolor;
+    }
+
+    .carousel-indicators {
+      .active {
+        background-color: $bcolor;
+      }
+    }
+    .carousel-inner {
+      img {
+        width: 100%;
+        height: 500px;
+      }
+    }
+  }
+}
+
+.productinfo {
+  .new {
+    width: 40px;
+    padding-left: 5px;
+    font-size: 12px;
+    color: #fff;
+    background-color: green;
+  }
+
+  .productcode {
+    text-align: left;
+    font-size: 12px;
+  }
+
+  .rating-icon .fas,
+  .far {
+    color: $bcolor;
+  }
+  .rating-icon {
+    h5 {
+      margin-top: 30px;
+      font-weight: bold;
+    }
+
+    p span {
+      font-weight: bold;
+    }
+
+    .btn-secondary {
+      background-color: $bcolor;
+      margin-left: 10px;
+      padding: 6px 12px;
+    }
+    img {
+      position: relative;
+      width: 100%;
+      height: 120px;
+      margin-left: -10px;
+    }
+  }
+}
+
+/*---------------------Product Details---------------*/
+
+.product-details {
+  margin-top: 30px;
+  margin-bottom: 50px;
+
+  span .fas {
+    margin-left: 10px;
+    color: $bcolor;
+    font-size: 15px;
+  }
+  .card-header {
+    a {
+      text-transform: uppercase;
+      color: $bcolor;
+    }
+  }
+}
